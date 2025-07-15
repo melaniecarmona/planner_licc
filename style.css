@@ -1,0 +1,110 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #c2185b;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.malla-grid {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 10px 0 20px 10px;
+  justify-content: flex-start;
+  scroll-snap-type: x proximity;
+}
+
+.semestre {
+  scroll-snap-align: start;
+  min-width: 220px;
+  background-color: #ffe4ec;
+  border: 2px solid #f48fb1;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.semestre h2 {
+  text-align: center;
+  color: #ad1457;
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #f8bbd0;
+  padding-bottom: 6px;
+}
+
+.ramo {
+  background: linear-gradient(145deg, #f8bbd0, #ec9fb9);
+  border: 1px solid #c2185b;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #880e4f;
+  font-weight: 600;
+  box-shadow: 4px 4px 8px #c28aa2, -4px -4px 8px #ffcee1;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.ramo:hover {
+  background: linear-gradient(145deg, #f48fb1, #e47c9d);
+  box-shadow: 6px 6px 10px #b67288, -6px -6px 10px #ffbed4;
+  color: #5c0040;
+  transform: translateY(-3px);
+}
+
+.ramo:active {
+  box-shadow: inset 3px 3px 5px #b67288, inset -3px -3px 5px #ffbed4;
+  transform: translateY(1px);
+}
+
+.ramo.bloqueado {
+  background-color: #f3f3f3;
+  color: #999;
+  border-style: dashed;
+  cursor: not-allowed;
+  box-shadow: none;
+  background: none;
+}
+
+.ramo.aprobado {
+  background: linear-gradient(145deg, #720a3d, #5c0035) !important;
+  color: #f8bbd0;
+  border-color: #3b0024;
+  text-decoration: line-through;
+  font-style: italic;
+  box-shadow: 4px 4px 8px #c28aa2, -4px -4px 8px #ffcee1;
+}
+
+
+.ramo.dragging {
+  opacity: 0.5;
+  transform: rotate(2deg);
+}
+
+#agregar-semestre {
+  margin: 20px auto;
+  display: block;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #c2185b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#agregar-semestre:hover {
+  background-color: #ad1457;
+}

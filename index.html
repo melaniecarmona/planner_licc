@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Interactiva LiCC – UC</title>
+  <meta name="description" content="Explora la malla curricular interactiva de LiCC en la UC. Descubre requisitos por semestre y desbloquea ramos al aprobar.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Licenciatura en Ingeniería en Ciencia de la Computación - UC</h1>
+  <p id="creditos" style="text-align:center; font-weight:bold; margin-bottom: 30px;">Créditos aprobados: 0</p>
+  <div class="malla-grid">
+    <div class="semestre" id="sem1">
+      <h2>1° Semestre</h2>
+      <div class="ramo" id="iic1103" onclick="aprobar('iic1103')">Introducción a la Programación</div>
+      <div class="ramo" id="iic1001" onclick="aprobar('iic1001')">Algoritmos y Sistemas Computacionales</div>
+      <div class="ramo" id="mat1107" onclick="aprobar('mat1107')">Introducción al Cálculo</div>
+      <div class="ramo" id="mat1207" onclick="aprobar('mat1207')">Introducción al Álgebra y Geometría</div>
+      <div class="ramo" id="fil2001" onclick="aprobar('fil2001')">Filosofía: ¿Para qué?</div>
+    </div>
+
+    <div class="semestre" id="sem2">
+      <h2>2° Semestre</h2>
+      <div class="ramo bloqueado" id="iic1253" onclick="aprobar('iic1253')">Matemáticas Discretas</div>
+      <div class="ramo bloqueado" id="iic2233" onclick="aprobar('iic2233')">Programación Avanzada</div>
+      <div class="ramo" id="iic2343" onclick="aprobar('iic2343')">Arquitectura de Computadores</div>
+      <div class="ramo bloqueado" id="mat1610" onclick="aprobar('mat1610')">Cálculo I</div>
+      <div class="ramo" id="teologico" onclick="aprobar('teologico')">Formación Teológica</div>
+    </div>
+
+    <div class="semestre" id="sem3">
+      <h2>3° Semestre</h2>
+      <div class="ramo bloqueado" id="iic2133" onclick="aprobar('iic2133')">Estructura de Datos y Algoritmos</div>
+      <div class="ramo bloqueado" id="iic2413" onclick="aprobar('iic2413')">Bases de Datos</div>
+      <div class="ramo bloqueado" id="mat1620" onclick="aprobar('mat1620')">Cálculo II</div>
+      <div class="ramo bloqueado" id="mat1203" onclick="aprobar('mat1203')">Álgebra Lineal</div>
+      <div class="ramo" id="ofg1" onclick="aprobar('ofg1')">Formación General</div>
+    </div>
+
+    <div class="semestre" id="sem4">
+      <h2>4° Semestre</h2>
+      <div class="ramo bloqueado" id="eyp1025" onclick="aprobar('eyp1025')">Modelos Probabilísticos</div>
+      <div class="ramo bloqueado" id="iic2143" onclick="aprobar('iic2143')">Ingeniería de Software</div>
+      <div class="ramo bloqueado" id="iic2224" onclick="aprobar('iic2224')">Autómatas y Compiladores</div>
+      <div class="ramo bloqueado" id="iic2333" onclick="aprobar('iic2333')">Sistemas Operativos y Redes</div>
+      <div class="ramo" id="ofg2" onclick="aprobar('ofg2')">Formación General</div>
+    </div>
+
+    <div class="semestre" id="sem5">
+      <h2>5° Semestre</h2>
+      <div class="ramo bloqueado" id="iic2560" onclick="aprobar('iic2560')">Fundamentos de Lenguajes de Programación</div>
+      <div class="ramo bloqueado" id="iic2214" onclick="aprobar('iic2214')">Teoría de la Computación</div>
+      <div class="ramo bloqueado" id="iic2513" onclick="aprobar('iic2513')">Tecnologías y Aplicaciones Web</div>
+      <div class="ramo" id="ciencias" onclick="aprobar('ciencias')">Optativo de Ciencias</div>
+      <div class="ramo" id="ofg3" onclick="aprobar('ofg3')">Formación General</div>
+    </div>
+
+    <div class="semestre" id="sem6">
+      <h2>6° Semestre</h2>
+      <div class="ramo bloqueado" id="iic2613" onclick="aprobar('iic2613')">Inteligencia Artificial</div>
+      <div class="ramo bloqueado" id="iic2283" onclick="aprobar('iic2283')">Diseño y Análisis de Algoritmos</div>
+      <div class="ramo bloqueado" id="iic2531" onclick="aprobar('iic2531')">Seguridad Computacional</div>
+      <div class="ramo bloqueado" id="eti1001" onclick="aprobar('eti1001')">Ética para Cs de la Computación</div>
+      <div class="ramo" id="ofg4" onclick="aprobar('ofg4')">Formación General</div>
+    </div>
+
+    <div class="semestre" id="sem7">
+      <h2>7° Semestre</h2>
+      <div class="ramo bloqueado" id="iic2523" onclick="aprobar('iic2523')">Sistemas Distribuidos</div>
+      <div class="ramo bloqueado" id="iic2182" onclick="aprobar('iic2182')">Interfaces y Experiencia de Usuario</div>
+      <div class="ramo" id="opt1" onclick="aprobar('opt1')">Curso Optativo</div>
+      <div class="ramo" id="opt2" onclick="aprobar('opt2')">Curso Optativo</div>
+      <div class="ramo" id="ofg5" onclick="aprobar('ofg5')">Formación General</div>
+      <div class="ramo bloqueado" id="iic2001" onclick="aprobar('iic2001')">Práctica de Cs de la Computación</div>
+    </div>
+
+    <div class="semestre" id="sem8">
+      <h2>8° Semestre</h2>
+      <div class="ramo bloqueado" id="iic2164" onclick="aprobar('iic2164')">Proyecto de Innovación y Computación</div>
+      <div class="ramo" id="opt3" onclick="aprobar('opt3')">Curso Optativo</div>
+      <div class="ramo" id="opt4" onclick="aprobar('opt4')">Curso Optativo</div>
+      <div class="ramo" id="opt5" onclick="aprobar('opt5')">Curso Optativo</div>
+      <div class="ramo" id="ofg6" onclick="aprobar('ofg6')">Formación General</div>
+    </div>
+  </div>
+  <button id="agregar-semestre">➕ Agregar Semestre</button>
+  <script src="script.js"></script>
+</body>
+</html>
